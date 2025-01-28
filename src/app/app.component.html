@@ -1,0 +1,27 @@
+<div style="text-align: center;">
+  <h1>Room Reservation System</h1>
+
+  <div>
+    <input
+      type="number"
+      [(ngModel)]="bookingCount"
+      placeholder="No of Rooms"
+      min="1"
+      max="5"
+    />
+    <button (click)="bookRooms()">Book</button>
+    <button (click)="resetRooms()">Reset</button>
+    <button (click)="randomizeOccupancy()">Random</button>
+  </div>
+
+  <p>{{ message }}</p>
+
+  <div class="container">
+    <div class="left-box"></div>
+    <div class="building">
+      <div *ngFor="let room of rooms" [class.booked]="room.booked" class="room">
+        {{ room.roomNumber }}
+      </div>
+    </div>
+  </div>
+</div>

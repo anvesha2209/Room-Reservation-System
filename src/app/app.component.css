@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.left-box {
+  width: 100px;
+  height: 600px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.building {
+  display: grid;
+  grid-template-columns: repeat(10, 50px);
+  gap: 5px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.room {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #000;
+}
+
+.room.booked {
+  background-color: #38b238;
+  color: #fff;
+}
