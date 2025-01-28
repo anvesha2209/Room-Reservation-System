@@ -24,16 +24,6 @@ export class AppComponent {
     }
   }
 
-  // initializeRooms() {
-  //   for (let floor = 10; floor >= 1; floor--) {
-  //     const roomCount = floor === 10 ? 7 : 10;
-  //     for (let i = 1; i <= roomCount; i++) {
-  //       const roomNumber = floor * 100 + i;
-  //       this.rooms.push({ floor, roomNumber, booked: false });
-  //     }
-  //   }
-  // }
-
   bookRooms() {
     if (this.bookingCount < 1 || this.bookingCount > 5) {
       this.message = 'Please enter a valid number of rooms (1-5).';
